@@ -1,0 +1,95 @@
+<div class="col-md-8 offset-md-2">
+    <form>
+
+
+        <div class="row col-md-12 mb-3">
+            <div class="container-fluid mt-5 ">
+
+                <h4 class="mb-3 text-center ">Reciever's Detail</h4>
+
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" class="form-control mb-2" name="fullName" required #fullname>
+
+                <label for="address">Address</label>
+                <input type="address" id="address" class="form-control mb-2" name="address" #address>
+
+                <div class="row">
+                    <div class="col-8">
+                        <label for="state">State</label>
+                        <input type="text" id="state" class="form-control mb-2" name="state" #state>
+                    </div>
+                    <div class="col-4">
+                        <label for="statecode">State Code</label>
+                        <input type="number" id="statecode" class="form-control mb-2" name="stateCode" #statecode>
+                    </div>
+                </div>
+
+
+                <label for="registrationNo">SGST / CGST / ICGST No.</label>
+                <input type="address" id="registrationNo" class="form-control mb-2" name="registrationNo" #registrationNo>
+
+                <label for="panNo">Pan No.</label>
+                <input type="text" id="panNo" class="form-control" name="panNo" #panNo>
+
+
+                <hr class="bg-dark">
+
+            </div>
+
+
+
+        </div>
+
+
+
+        <app-products>
+        </app-products>
+
+
+
+
+        <div class=" row col-md-12 ">
+            <div class="container-fluid ">
+
+                <form autocomplete="off">
+                    <label for="transport">Transport</label>
+                    <input type="text" id="transport" class="form-control mb-2" name="transport" #transport>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="cgstamount">CGST Amount</label>
+                            <input type="text" id="cgstamt" class="form-control mb-2" name="cgstamount" #cgstamt>
+                        </div>
+
+                        <div class="col-6">
+                            <label for="sgstamount">SGST Amount</label>
+                            <input type="text" id="sgstamt" class="form-control mb-2" name="sgstamount" #sgstamt>
+                        </div>
+                    </div>
+
+                    <h6 class="text-center m-3">OR</h6>
+
+                    <label for="icgstamount">IC GST Amount</label>
+                    <input type="text" id="icgstamt" class="form-control mb-2" name="icgstamount" #icgstamt>
+
+
+
+                    <label for="finalamt">Final Value</label>
+                    <input type="text" id="finalamt" class="form-control" name="finalTotal" #finalamt>
+
+
+                </form>
+                <button mat-raised-button color="primary" class="btn-lg btn-block mb-5 mt-4" (click)="onSubmit() ">Print Invoice</button>
+
+
+            </div>
+
+        </div>
+
+
+
+    </form>
+
+
+
+</div>

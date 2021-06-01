@@ -1,0 +1,10 @@
+.signature {
+    height: 70px;
+    width: 200px;
+}
+
+@media print {
+    #printPageButton {
+        display: none;
+    }
+}
